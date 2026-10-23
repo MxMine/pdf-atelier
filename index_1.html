@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Atelier Studio</title>
+<meta name="description" content="PDF Atelier Studio : lire, modifier, signer, créer et convertir des PDF sur Windows et Android. Logiciel libre (AGPL v3).">
+<style>
+  :root { --fond: #ffffff; --texte: #202124; --doux: #5f6368; --accent: #c62828; --cadre: #f4f5f7; --trait: #dadce0; --bouton: #c62828; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #17181a; --texte: #e8eaed; --doux: #a8acb3; --accent: #ef6c6c; --cadre: #222427; --trait: #3a3d42; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
+  header img { width: 72px; height: 72px; flex: none; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 0; }
+  .sous-titre { color: var(--doux); margin: 4px 0 0; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; color: var(--accent); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  /* Bouton du Microsoft Store : même rouge en mode sombre, pour garder le texte blanc lisible */
+  .action { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 22px 0 6px; }
+  .action a { display: inline-block; padding: 12px 22px; border-radius: 8px; background: var(--bouton); color: #ffffff;
+              font-weight: 600; text-decoration: none; }
+  .action a:hover, .action a:focus-visible { background: #a91f1f; }
+  .action span { color: var(--doux); font-size: 0.95rem; }
+  .liens { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin: 24px 0 8px; }
+  .liens a { display: block; padding: 14px 16px; border: 1px solid var(--trait); border-radius: 8px; background: var(--cadre);
+             color: var(--texte); text-decoration: none; }
+  .liens a strong { display: block; color: var(--accent); }
+  .liens a span { color: var(--doux); font-size: 0.92rem; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--trait); color: var(--doux); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icone.png" alt="">
+    <div>
+      <h1>PDF Atelier Studio</h1>
+      <p class="sous-titre">Lire, modifier, signer, créer et convertir des PDF. Windows et Android.</p>
+    </div>
+  </header>
+
+  <p>PDF Atelier fonctionne sur votre appareil, sans compte, sans abonnement et sans publicité. Il modifie le texte
+  directement sur la page, remplit les formulaires, ajoute images, tableaux et signatures, organise et fusionne les pages,
+  convertit vers et depuis Word. Il lit aussi les documents à voix haute.</p>
+
+  <p class="action">
+    <a href="https://apps.microsoft.com/detail/9P3MWBSFWJT3">Obtenir sur le Microsoft Store</a>
+    <span>Version Windows 10 et 11, gratuite</span>
+  </p>
+
+  <div class="liens">
+    <a href="https://github.com/MxMine/pdf-atelier/releases"><strong>Code source</strong><span>Toutes les versions, licence GNU AGPL v3</span></a>
+    <a href="confidentialite.html"><strong>Confidentialité</strong><span>Ce que l'appli fait de vos données</span></a>
+    <a href="mailto:davidpercot@outlook.fr"><strong>Contact</strong><span>Assistance et signalements</span></a>
+  </div>
+
+  <h2>Intelligence artificielle (facultative)</h2>
+  <p>Les questions sur un document et la traduction d'un document utilisent l'IA que vous choisissez (Claude, Gemini,
+  ChatGPT, Mistral ou un serveur compatible OpenAI), avec votre propre clé d'API. Le contenu du document est alors envoyé à
+  ce fournisseur. Les réponses sont générées automatiquement et peuvent contenir des erreurs. Sous chaque réponse,
+  «&nbsp;Signaler&nbsp;» permet de prévenir le créateur d'un contenu inapproprié.</p>
+
+  <h2>Logiciel libre</h2>
+  <p>PDF Atelier utilise le moteur MuPDF d'Artifex Software. Il est distribué sous licence GNU Affero General Public License
+  version 3 : vous pouvez l'utiliser, l'étudier, le modifier et le redistribuer selon ses termes. Le code source complet de
+  chaque version est disponible au lien «&nbsp;Code source&nbsp;».</p>
+
+  <footer>© 2026 David PERCOT. MuPDF © Artifex Software.</footer>
+</main>
+</body>
+</html>
