@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Atelier · Politique de confidentialité</title>
+<meta name="description" content="Politique de confidentialité de l'application PDF Atelier (Windows et Android).">
+<style>
+  :root { --fond: #ffffff; --texte: #202124; --doux: #5f6368; --accent: #c62828; --cadre: #f4f5f7; --trait: #dadce0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #17181a; --texte: #e8eaed; --doux: #a8acb3; --accent: #ef6c6c; --cadre: #222427; --trait: #3a3d42; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; color: var(--accent); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  .date { color: var(--doux); margin-bottom: 24px; }
+  .encadre { background: var(--cadre); border-left: 4px solid var(--accent); padding: 12px 16px; border-radius: 6px; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--trait); margin: 40px 0 24px; }
+  code { font-size: 0.92em; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PDF Atelier · Politique de confidentialité</h1>
+  <p class="date">Application Windows et Android. Mise à jour : 22 octobre 2026.</p>
+
+  <p class="encadre">PDF Atelier fonctionne sur votre appareil. L'application ne collecte aucune donnée pour l'éditeur :
+  pas de compte, pas de statistiques d'utilisation, pas de publicité, pas de pisteur. L'éditeur ne reçoit que les messages
+  que vous choisissez de lui écrire.</p>
+
+  <h2>Éditeur</h2>
+  <p>PDF Atelier est publié par David PERCOT. Contact : <a href="mailto:davidpercot@outlook.fr">davidpercot@outlook.fr</a>.</p>
+
+  <h2>Données traitées sur votre appareil</h2>
+  <p>Les documents que vous ouvrez, modifiez, créez ou convertissez restent sur votre appareil, à l'emplacement que vous
+  choisissez. Pendant le travail, l'application en garde des copies temporaires, effacées automatiquement. Elle conserve
+  aussi sur l'appareil vos réglages, la liste de vos fichiers récents, vos signatures mémorisées et un journal technique
+  des erreurs : sous Windows dans les dossiers <code>%APPDATA%\PDF Atelier</code> et <code>%LOCALAPPDATA%\PDF Atelier</code>
+  de votre compte, sous Android dans l'espace privé de l'application. Rien de tout cela n'est envoyé à l'éditeur.</p>
+  <p>Sous Android et dans la version du Microsoft Store, la désinstallation efface ces données. Avec l'installateur
+  classique pour Windows, le dossier <code>%APPDATA%\PDF Atelier</code> est conservé : vous pouvez le supprimer vous-même.</p>
+  <p>La lecture à voix haute utilise le moteur de synthèse vocale installé sur l'appareil. L'impression et le partage
+  passent par les services du système, vers l'imprimante ou l'application que vous choisissez.</p>
+
+  <h2>Fonctions d'intelligence artificielle (facultatives)</h2>
+  <p>Seules les fonctions <strong>Questions à l'IA</strong> et <strong>Traduire un document</strong> utilisent Internet.
+  Quand vous les utilisez, le contenu du document (son texte ; pour un document numérisé, le fichier lui-même ou l'image de
+  ses pages) et vos questions sont envoyés directement au fournisseur d'IA que vous avez choisi, avec votre propre clé d'API. Ces envois ne passent par
+  aucun serveur de l'éditeur. L'application vous le rappelle avant le premier envoi vers chaque fournisseur.</p>
+  <ul>
+    <li>Claude (Anthropic) : <a href="https://www.anthropic.com/legal/privacy">politique de confidentialité d'Anthropic</a>.</li>
+    <li>Gemini (Google) : <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a> et
+      <a href="https://ai.google.dev/gemini-api/terms">conditions de l'API Gemini</a>. Avec l'offre gratuite, Google peut
+      utiliser les contenus envoyés pour améliorer ses produits.</li>
+    <li>ChatGPT (OpenAI) : <a href="https://openai.com/policies/eu-privacy-policy">politique de confidentialité d'OpenAI pour l'Europe</a>.</li>
+    <li>Mistral AI : <a href="https://legal.mistral.ai/terms/privacy-policy">politique de confidentialité de Mistral AI</a>.
+      Selon l'offre, Mistral AI peut utiliser les contenus pour améliorer ses services, sauf si l'option « Anonymous
+      improvement data » est désactivée dans votre compte.</li>
+    <li>Serveur compatible OpenAI : le serveur dont vous saisissez l'adresse (par exemple Ollama ou LM Studio sur votre
+      réseau) ; ses règles sont celles de son exploitant.</li>
+  </ul>
+  <p>Les réponses et les traductions sont produites automatiquement par le modèle du fournisseur choisi. Elles peuvent
+  contenir des erreurs : relisez-les avant de vous en servir. N'utilisez pas ces fonctions pour un document que vous ne
+  voulez pas transmettre à ce fournisseur.</p>
+
+  <h2>Clés d'API</h2>
+  <p>Vos clés d'API sont enregistrées chiffrées sur l'appareil : par Windows pour votre compte d'utilisateur (DPAPI), par le
+  coffre de clés d'Android sur le téléphone. Chaque clé n'est envoyée qu'au fournisseur de l'IA correspondante. Vous pouvez
+  la supprimer à tout moment depuis les réglages de l'IA.</p>
+
+  <h2>Signalements et messages</h2>
+  <p>Sous chaque réponse de l'IA, <strong>Signaler</strong> (ainsi que le menu <strong>Signaler un contenu de l'IA</strong>)
+  prépare un courriel destiné à l'éditeur, que votre messagerie ouvre : vous le relisez et décidez de l'envoyer. Il contient
+  votre description du problème, le nom de l'IA utilisée, la version de l'application et, si vous laissez la case cochée,
+  un extrait du contenu signalé. Le document n'est jamais joint.</p>
+  <p>Si vous envoyez ce courriel, ou un message à l'adresse de contact, l'éditeur reçoit votre adresse électronique et le
+  contenu du message. Il s'en sert uniquement pour traiter votre demande (par exemple corriger les consignes données à l'IA
+  ou vous répondre), ne le transmet à personne et le supprime au plus tard un an après son traitement.</p>
+
+  <h2>Vos droits</h2>
+  <p>En dehors des messages que vous lui envoyez, l'éditeur ne détient aucune donnée vous concernant. Pour ces messages,
+  vous pouvez demander leur consultation, leur correction ou leur suppression à l'adresse de contact. Vous pouvez aussi
+  adresser une réclamation à la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>). Pour les données envoyées à un
+  fournisseur d'IA, adressez vos demandes à ce fournisseur, selon sa politique de confidentialité.</p>
+
+  <h2>Modifications</h2>
+  <p>Cette politique peut évoluer avec l'application. La date de mise à jour figure en haut de la page.</p>
+
+  <hr>
+
+  <h2>Summary in English</h2>
+  <p>PDF Atelier runs on your device. The app collects no data for the publisher (David PERCOT): no account, no analytics,
+  no advertising, no tracking. Documents, settings, recent files, saved signatures and the error log stay on your device.
+  The optional AI features (questions about a document, document translation) send the document content and your
+  questions directly to the AI provider you choose (Anthropic, Google, OpenAI, Mistral AI or a compatible server you
+  configure), using your own API key, under that provider's privacy policy. API keys are stored encrypted on the device
+  and sent only to the matching provider. AI output is generated automatically and may contain errors. The Report link
+  under each AI answer prepares an email to the publisher, which you review in your mail app before sending; the document
+  is never attached. Messages you send are used only to handle your request, never shared, and deleted within one year.
+  Contact: <a href="mailto:davidpercot@outlook.fr">davidpercot@outlook.fr</a>.</p>
+</main>
+</body>
+</html>
